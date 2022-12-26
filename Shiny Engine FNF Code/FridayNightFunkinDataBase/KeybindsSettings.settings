@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Shiny_Engine_FNF.FridayNightFunkinDataBase" GeneratedClassName="KeybindsSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KeyBindsAccept" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">25769803794</Value>
+    </Setting>
+    <Setting Name="KeyBindsPause" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">55834574854</Value>
+    </Setting>
+    <Setting Name="KeyBindsLeft" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">98784247852</Value>
+    </Setting>
+    <Setting Name="KeyBindsDown" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">111669149758</Value>
+    </Setting>
+    <Setting Name="KeyBindsUp" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">103079215170</Value>
+    </Setting>
+    <Setting Name="KeyBindsRight" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">107374182447</Value>
+    </Setting>
+    <Setting Name="KeyBindsReset" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">61</Value>
+    </Setting>
+    <Setting Name="KeyBindsUILeft" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">98784247852</Value>
+    </Setting>
+    <Setting Name="KeyBindsUIDown" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">111669149758</Value>
+    </Setting>
+    <Setting Name="KeyBindsUIUp" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">103079215170</Value>
+    </Setting>
+    <Setting Name="KeyBindsUIRight" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">107374182447</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

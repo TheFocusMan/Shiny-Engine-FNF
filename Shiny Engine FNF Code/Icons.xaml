@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ImageBrush x:Key="max_Audio_Icon" ImageSource="/Shiny Engine FNF Code;component/max_Audio_Icon.png" />
+    <ImageBrush x:Key="med_Audio_Icon" ImageSource="/Shiny Engine FNF Code;component/medium_Audio_Icon.png" />
+    <ImageBrush x:Key="low_Audio_Icon" ImageSource="/Shiny Engine FNF Code;component/low_Audio_Icon.png" />
+    <ImageBrush x:Key="mute_Audio_Icon" ImageSource="/Shiny Engine FNF Code;component/mute_Audio_Icon.png" />
+</ResourceDictionary>

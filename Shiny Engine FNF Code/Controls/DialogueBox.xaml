@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Shiny_Engine_FNF.DialogueBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Shiny_Engine_FNF"
+             xmlns:visual="http://schemas.thefocusman.com/wpfgame/controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <visual:CanvasWithMargarin x:Name="panel">
+        <Border x:Name="bgFade" Background="#FFB3DFD8" Margin="-200,-200,0,0" Height="936" Width="1664" Opacity="0" />
+        <visual:Sprite x:Name="portraitLeft" X="-20" Y="40" HorizontalAlignment="Center"/>
+        <visual:Sprite x:Name="portraitRight" X="0" Y="40"/>
+        <visual:Sprite x:Name="box" X="-20" Y="45" HorizontalAlignment="Center"/>
+        <visual:Sprite x:Name="handSelect" X="1042" Y="590"/>
+        <TextBlock x:Name="dropText" Margin="240, 552,0,0" FontSize="32" TextWrapping="Wrap" Foreground="#FFD89494" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#Pixel Arial 11" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <visual:TypeTextBlock x:Name="swagDialogue" Margin="240, 550,0,0" TextWrapping="Wrap" FontSize="32" Foreground="#FF3F2021" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#Pixel Arial 11 Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </visual:CanvasWithMargarin>
+</UserControl>

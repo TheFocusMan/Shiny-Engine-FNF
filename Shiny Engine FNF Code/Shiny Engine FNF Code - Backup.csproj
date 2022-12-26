@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Shiny_Engine_FNF</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="pixel.otf" />
+    <None Remove="vcr.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pixel.otf">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="vcr.ttf">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <Import Project="..\VisualHelpers\VisualHelpers.projitems" Label="Shared" />
+
+</Project>

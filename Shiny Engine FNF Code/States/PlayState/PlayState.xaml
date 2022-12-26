@@ -1,0 +1,67 @@
+﻿<local:MusicBeatState x:Class="Shiny_Engine_FNF.Code.PlayState"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Shiny_Engine_FNF.Code"
+      xmlns:visual="http://schemas.thefocusman.com/wpfgame/controls"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280" Width="1280" Height="720"
+      Title="PlayState">
+
+    <visual:Camera2D x:Name="panel">
+        <visual:Camera2D x:Name="camGame" RenderTransformOrigin="0.5,0.5" Background="Black" Width="1280" Height="720" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <visual:Camera2D.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </visual:Camera2D.RenderTransform>
+        </visual:Camera2D>
+        <visual:Camera2D x:Name="camOther"  RenderTransformOrigin="0.5,0.5">
+            <visual:Camera2D.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </visual:Camera2D.RenderTransform>
+            <StackPanel x:Name="luaDebugGroup">
+
+            </StackPanel>
+        </visual:Camera2D>
+        <visual:Camera2D x:Name="camHUD"  Width="1280" Height="720" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <visual:Camera2D.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </visual:Camera2D.RenderTransform>
+            <ProgressBar x:Name="timeBar" Maximum="800" Value="61" Foreground="White" BorderBrush="Black" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="5" Width="13" Background="Black" />
+            <visual:OutlinedTextBlock x:Name="timeTxt" Margin="640,44,0,44" Width="400" Text="00:00" HorizontalAlignment="Left" FontSize="32" Fill="White" TextAlignment="Center" StrokeThickness="2" VerticalAlignment="Top" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+            <visual:CanvasWithMargarin x:Name="strumLineNotes" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            </visual:CanvasWithMargarin>
+            <visual:CanvasWithMargarin x:Name="grpNoteSplashes" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            </visual:CanvasWithMargarin>
+            <ProgressBar x:Name="healthBar" Value="0.7" FlowDirection="RightToLeft" Maximum="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <visual:OutlinedTextBlock x:Name="scoreTxt"  RenderTransformOrigin="0.5,0.5" FontSize="20" Stroke="Black" Fill="White" TextAlignment="Center"   StrokeThickness="1.25"  FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <visual:OutlinedTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0"/>
+                    </TransformGroup>
+                </visual:OutlinedTextBlock.RenderTransform>
+            </visual:OutlinedTextBlock>
+            <visual:OutlinedTextBlock x:Name="botplayTxt" FontSize="32" Text="BOTPLAY"  Stroke="Black" Fill="White" TextAlignment="Center" StrokeThickness="1.25"  FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+        </visual:Camera2D>
+    </visual:Camera2D>
+</local:MusicBeatState>

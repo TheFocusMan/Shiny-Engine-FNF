@@ -1,0 +1,33 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:visual="http://schemas.thefocusman.com/wpfgame/controls"
+    x:Class="Shiny_Engine_FNF.Code.StatePreloader"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Shiny_Engine_FNF.Code"
+    mc:Ignorable="d"
+    d:DesignHeight="720" d:DesignWidth="1280" Loaded="Page_Loaded"
+    Title="StatePreloader" Background="Black">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Icons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Viewbox Stretch="Uniform" StretchDirection="Both">
+            <Frame ClipToBounds="True" x:Name="contentC" NavigationUIVisibility="Hidden" Width="1280" Height="720" OpacityMask="White" AllowDrop="True"/>
+        </Viewbox>
+        <visual:OutlinedTextBlock x:Name="framerateText" Text="FPS:60" StrokeThickness="1" FontSize="24" Stroke="Black" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <visual:OutlinedTextBlock x:Name="memoryText" Text="Memory:100 Mb" StrokeThickness="1" FontSize="24" Stroke="Black" Fill="White" Margin="0,32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Border x:Name="audiocpntroler"  Background="White" Height="50" VerticalAlignment="Top" Margin="244,-67,244,0" BorderBrush="Black" BorderThickness="3,0,3,3">
+            <DockPanel>
+                <Button x:Name="audiobutton" Width="50" Background="{StaticResource max_Audio_Icon}" Click="Button_Click" Focusable="False"/>
+                <TextBlock x:Name="VolumeText" Text="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+                <Slider x:Name="volumeSlider" HorizontalAlignment="Stretch" VerticalAlignment="Center" Maximum="100" Value="100" ValueChanged="Slider_ValueChanged" Focusable="False"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Page>

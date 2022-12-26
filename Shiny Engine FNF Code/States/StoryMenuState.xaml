@@ -1,0 +1,33 @@
+﻿<local:MusicBeatState x:Class="Shiny_Engine_FNF.Code.StoryMenuState"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Shiny_Engine_FNF.Code"
+      xmlns:controls="clr-namespace:Shiny_Engine_FNF.Code.Controls"
+      xmlns:visual="http://schemas.thefocusman.com/wpfgame/controls"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280" Width="1280" Height="720"
+      Title="StoryMenuState" Background="Black" MouseWheel="MusicBeatState_MouseWheel">
+
+    <visual:Camera2D>
+        <TextBlock x:Name="scoreText" HorizontalAlignment="Left"  Text="SCORE: 49324858" VerticalAlignment="Top" FontSize="32" Background="Black" Foreground="White" Margin="20,10,0,0" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+        <TextBlock x:Name="txtWeekTitle" HorizontalAlignment="Right" VerticalAlignment="Top" Text="WeekText" FontSize="32" Margin="0,10,00,0" Foreground="White" Opacity="0.7" TextAlignment="Right" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+        <TextBlock x:Name="rankText" Text="RANK: GREAT" VerticalAlignment="Top" Height="50" Foreground="White" FontSize="32" HorizontalAlignment="Center" Margin="-20,10,0,0" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+        <visual:CanvasWithMargarin ClipToBounds="True" x:Name="yellowBG" HorizontalAlignment="Stretch" Margin="0,56,0,0" Height="400" VerticalAlignment="Top" Background="#FFF9CF51">
+            <controls:MenuCharacter x:Name="charchter1"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <controls:MenuCharacter  x:Name="charchter2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <controls:MenuCharacter  x:Name="charchter3"   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </visual:CanvasWithMargarin>
+        <TextBlock x:Name="txtTracklist" HorizontalAlignment="Center" Margin="-900,489,0,0" TextWrapping="Wrap" Text="Tracks" VerticalAlignment="Top" FontSize="32" Foreground="#FFE55777" TextAlignment="Center" FontFamily="pack://application:,,,/Shiny Engine FNF Code;component/#VCR OSD Mono"/>
+        <Border x:Name="gridWeek" Margin="0,466,150,0" Width="550" HorizontalAlignment="Center" VerticalAlignment="Top" ClipToBounds="True">
+            <Grid x:Name="grpWeekText"/>
+        </Border>
+        <Grid x:Name="difficultySelectors" HorizontalAlignment="Left" Height="89" Margin="802,466,0,0" VerticalAlignment="Top" Width="460" ClipToBounds="True">
+            <visual:Sprite x:Name="leftArrow" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="71" Margin="0" VerticalAlignment="Stretch" MouseLeftButtonUp="LeftArrow_MouseUp"/>
+            <visual:Sprite x:Name="sprDifficulty" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Width="350" d:LayoutOverrides="Height" VerticalAlignment="Stretch"/>
+            <visual:Sprite x:Name="rightArrow" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Right" Width="74" VerticalAlignment="Stretch" MouseLeftButtonUp="RightArrow_MouseLeftButtonUp"/>
+        </Grid>
+
+        </visual:Camera2D>
+</local:MusicBeatState>

@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<UseWPF>True</UseWPF>
+		<StartupObject></StartupObject>
+		<Copyright>Copyright ©  2021</Copyright>
+		<Description>This application is engine on fnf that coded in C# by TheFocusMan</Description>
+		<Authors>TheFocusMan</Authors>
+		<AssemblyVersion>0.1.2</AssemblyVersion>
+		<FileVersion>1.0.29.0</FileVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<NeutralLanguage>he</NeutralLanguage>
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DefineConstants>$(DefineConstants)TRACE</DefineConstants>
+		<_SuppressWpfTrimError>true</_SuppressWpfTrimError>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Shiny Engine FNF Code\Shiny Engine FNF Code.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="FridayNightFunkinDataBase\KeybindsSettings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>KeybindsSettings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="FridayNightFunkinDataBase\KeybindsSettings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>KeybindsSettings.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+
+</Project>
